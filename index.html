@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>fitness wow</title>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <div class="head">
+                <nav class="navigation">
+                    <ul>
+                        <li class="price"><a href="#sales" onclick="addShowClassToNav()">цены и акции</a></li>
+                        <li  class="classes"><a href="#group-classes" onclick="addShowClassToNav()">групповые занятия</a></li>
+                        <li  class="trainings"><a href="#trainers" onclick="addShowClassToNav()">частные тренировки</a></li>
+                    </ul>
+                </nav>
+                <div class="logotype">
+                    <img src="img/logotype.svg" alt="logo" class="logo">
+                </div>
+                <div class="burger-menu" onclick="addShowClassToNav()">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>  
+        </div> 
+   </header> 
+   <main>
+    <section class="zero-page">
+        <div class="pop-up" >
+            <div class="popup-bg" onclick="OpenWindow()"></div>
+            <div class="pop-up-info">
+                <div class="pop-up-header">
+                    <h2>Спасибо за заявку!</h2>
+                </div>
+                <div class="pop-up-text">
+                    <h4>Наш менеджер свяжется с Вами в течение двух рабочих дней</h4>
+                </div>
+                <div class="pop-up-button">
+                    <input type="button" class="pop-up-but" onclick="OpenWindow()" value="ЗАКРЫТЬ">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-first-page">
+        <div class="container">
+         <div class="flex-first-page">
+             <div class="fisrt-page-main-text">
+                 <div class="business-name">
+                     <h1>fit me</h1>
+                 </div>
+                 <div class="header-first-page">
+                     <h2>Присоединяйся к нашему сообществу и преобрази свою жизнь</h2>
+                 </div>
+                 <div class="but-anchor-fist-page">
+                     <a class="but" href="#record"><input type="button" class="but but-first-page" value="подать заявку"></a>
+                 </div>
+             </div>
+         </div>  
+        </div>
+     </section>
+     <section class="section-second-page">
+        <div class="container">
+            <div class="flex-second-page">
+                <div class="photo-second-page">
+                    <img src="img/second-photo.png" alt="gym-photo" class="second-photo">
+                </div>
+                <div class="information-second-page">
+                    <div class="header-second-page">
+                        <h3>Твой путь к фитнесу начинается с нами</h3>
+                    </div>
+                    <div class="text-second-page">
+                        <h4>Присоединившись к нашему спортивному клубу, ты становишься частью сообщества единомышленников, объединенных страстью к фитнесу. Вместе мы создаем мотивирующую и поддерживающую атмосферу, которая поможет тебе достичь своих целей.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-third-page">
+        <div class="container">
+            <div class="header-third-page">
+                <h2><a name="sales"></a>Стань членом клуба и получи эксклюзивные скидки</h2>
+            </div>
+            <div class="flex-third-page">
+                <div class="photo-third-page">
+                    <img src="img/third-photo.png" alt="gym-photo" class="third-photo">
+                </div>
+                <div class="information-third-page">
+                    <div class="head-header-third-page">
+                        <h3>Получи доступ к специальным ценам, акциям и мероприятиям</h3>
+                    </div>
+                    <div class="text-third-page">
+                        <h4>Наслаждайся специальными ценами на персональные тренировки, групповые занятия и программы питания. Мы также проводим регулярные акции и мероприятия, доступные только для членов клуба. Присоединяйся к нам сегодня и начни экономить на пути к своей фитнес-мечте.</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section-fourth-page">
+        <div class="container">
+            <div class="table-fourth-page">
+                <table class="table-cost">
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Тип абонемента</td>
+                        <td class="table-cost-column">Цена(руб.)</td>
+                        <td class="table-cost-column">Экономия</td>
+                    </tr>
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Месячный</td>
+                        <td class="table-cost-column">3.000</td>
+                        <td class="table-cost-column">—</td>
+                    </tr>
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Квартальный (3 месяца)</td>
+                        <td class="table-cost-column">7.500</td>
+                        <td class="table-cost-column">15%</td>
+                    </tr>
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Полугодовой (6 месяцев)</td>
+                        <td class="table-cost-column">13.500</td>
+                        <td class="table-cost-column">25%</td>
+                    </tr>
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Годовой</td>
+                        <td class="table-cost-column">24.000</td>
+                        <td class="table-cost-column">35%</td>
+                    </tr>
+                    <tr class="table-cost-row">
+                        <td class="table-cost-column">Бессрочный</td>
+                        <td class="table-cost-column">48.000</td>
+                        <td class="table-cost-column">50%</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <section class="section-fifth-page">
+        <div class="container">
+         <div class="header-fifth-page">
+             <h2><a name="trainers"></a>Персональный подход к каждому клиенту</h2>
+         </div>
+             <div class="information-fifth-page">
+                 <div class="head-header-fifth-page">
+                     <h3>Получи персональное руководство и поддержку на каждом этапе своего фитнес-пути</h3>
+                 </div>
+                 <div class="text-fifth-page">
+                     <h4>Мы понимаем, что каждый клиент уникален, и поэтому предлагаем индивидуальный подход к тренировкам. Наши сертифицированные тренеры составят для тебя персонализированный план тренировок, учитывающий твои цели, уровень физической подготовки и образ жизни.Мы будем работать с тобой один на один, чтобы обеспечить правильную технику выполнения упражнений, корректировать план по мере необходимости и поддерживать твою мотивацию.</h4>
+                 </div>
+             </div>
+     </section>
+     <section class="section-sixth-page">
+        <div class="contaiter">
+            <div class="about-trainers">
+                <div class="trainer">
+                    <div class="photo-trainer-left">
+                        <img src="img/trainer-maxim.png" alt="left-trainer-photo" class="left-trainer-photo">
+                    </div>
+                    <div class="trainer-open">
+                        <div class="trainer-name">
+                            <p class="name-of-trainer">Максим Сидоров</p>
+                        </div>
+                        <div class="trainer-info">
+                            <ul>
+                                <li>Опыт работы: 3 года</li>
+                                <li>Победитель городских соревнований по кроссфиту</li>
+                                <li>Призер областного конкурса по бегу на длинные дистанции</li>
+                            </ul>
+                        </div>
+                        <div class="cost-training-name">
+                            <p class="cost-trainer-name">Стоимость персональной тренировки:</p>
+                        </div>
+                        <div class="cost-training">
+                            <p class="cost-trainer">1800 рублей/час</p>
+                        </div>
+                    </div>
+                    <div class="but-left-trainer">
+                        <input type="button" class="but more-button" onclick="toggleTrainer(0)" value="подробнее">
+                    </div>
+                </div>
+                <div class="trainer">
+                    <div class="photo-trainer-center">
+                        <img src="img/trainer-anreeva.png" alt="center-trainer-photo" class="center-trainer-photo">
+                    </div>
+                    <div class="trainer-open">
+                        <div class="trainer-name">
+                            <p class="name-of-trainer">Валерия Андреева</p>
+                        </div>
+                        <div class="trainer-info">
+                            <ul>
+                                <li>Опыт работы: 7 лет</li>
+                                <li>Победительница всероссийского конкурса по фитнес-аэробике</li>
+                                <li>Призер международных соревнований по фитнес-бикини</li>
+                            </ul>
+                        </div>
+                        <div class="cost-training-name">
+                            <p class="cost-trainer-name">Стоимость персональной тренировки:</p>
+                        </div>
+                        <div class="cost-training">
+                            <p class="cost-trainer">1900 рублей/час</p>
+                        </div>
+                    </div>
+                    <div class="but-left-trainer">
+                        <input type="button" class="but more-button" onclick="toggleTrainer(1)" value="подробнее">
+                    </div>
+                </div>
+                <div class="trainer">
+                    <div class="photo-trainer-right">
+                        <img src="img/trainer-ivan.png" alt="right-trainer-photo" class="right-trainer-photo">
+                    </div>
+                    <div class="trainer-open">
+                        <div class="trainer-name">
+                            <p class="name-of-trainer">Иван Петров</p>
+                        </div>
+                        <div class="trainer-info">
+                            <ul>
+                                <li>Опыт работы: 5 лет</li>
+                                <li>Победитель регионального чемпионата по пауэрлифтингу</li>
+                                <li>Призер городского конкурса по функциональному тренингу</li>
+                            </ul>
+                        </div>
+                        <div class="cost-training-name">
+                            <p class="cost-trainer-name">Стоимость персональной тренировки:</p>
+                        </div>
+                        <div class="cost-training">
+                            <p class="cost-trainer">2000 рублей/час</p>
+                        </div>
+                    </div>
+                    <div class="but-left-trainer">
+                        <input type="button" class="but more-button" value="подробнее" onclick="toggleTrainer(2)">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="section-seventh-page">
+        <div class="header-seventh-page">
+            <h2>проверь себя на выносливость со скидкой 50% на первые три тренировки</h2>
+        </div><form action="" method="get" class="form-record">
+            <div class="form-record-training">
+                <div class="form-record-part">
+                    <div class="form-record-label">
+                        <label for="name">Фамилия:</label><br>
+                        <input type="text" name="fname" id="fname" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="lname">Имя:</label><br>
+                        <input type="text" name="lname" id="lname" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="vlname">Отчество:</label><br>
+                        <input type="text" name="vlname" id="vlname" required />
+                    </div>
+                </div>
+                <div class="form-record-part">
+                    <div class="form-record-label">
+                        <label for="card-number">Номер клубной карты:</label><br>
+                        <input type="text" id="card-number" name="card-number" inputmode="numeric" pattern="[0-9]+" required />
+                    </div>
+                </div>
+            </div>
+            <div class="but-form-record">
+              <input type="button" class="but record-button" onclick="OpenWindow()" value="записаться"/>
+            </div>
+        </form>
+     </section>
+     <section class="section-eighth-page">
+        <div class="container">
+                <div class="flex-eighth-page">
+                <div class="header-eighth-page">
+                    <h2>Современные зоны для игр и отдыха</h2>
+                </div>
+                <div class="information-eighth-page">
+                    <div class="head-header-eighth-page">
+                        <h3>Расслабься и восстанови силы в  современных зонах отдыха</h3>
+                    </div>
+                    <div class="text-eighth-page">
+                        <h4>После интенсивной тренировки важно расслабиться и восстановить силы. В нашем клубе есть современные зоны отдыха, где ты можешь сделать это с комфортом. Наслаждайся прохладительными напитками в нашей лаундж-зоне, посмотри телевизор или почитай журнал в нашей библиотеке</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="section-ninth-page">
+     </section>
+     <section class="section-tenth-page">
+        <div class="container">
+            <div class="flex-tenth-page">
+                <div class="head-header-tenth-page">
+                    <h3>Наши зоны отдыха - идеальное место для общения и новых знакомств</h3>
+                </div>
+                <div class="text-tenth-page">
+                    <h4>Приходите, расслабьтесь и насладитесь нашей дружелюбной атмосферой. Наши зоны отдыха - это место, где вы можете поболтать, посмеяться и познакомиться с другими людьми, которые разделяют вашу страсть к фитнесу.</h4>
+            </div>
+        </div>
+     </section>
+     <section class="section-eleventh-page">
+        <div class="header-eleventh-page">
+            <h2><a name="group-classes"></a>Командный дух и поддержка единомышленников</h2>
+        </div>
+        <div class="information-eleventh-page">
+            <div class="head-header-eleventh-page">
+                <h3>Мотивируй и поддерживай друг друга на пути к успеху</h3>
+            </div>
+            <div class="text-eleventh-page">
+                <h4>Групповые занятия – это отличный способ выйти из зоны комфорта, попробовать что-то новое и познакомиться с единомышленниками. В нашем клубе мы предлагаем широкий выбор групповых занятий, включая йогу, пилатес, зумбу и многое другое. Наши опытные инструкторы создают энергичную и мотивирующую атмосферу, которая вдохновит тебя на достижение новых высот.</h4>
+            </div>
+            <div class="table-cost-group">
+                <table class="table-classes">
+                        <tr class="subscription-cost-row">
+                            <td class="subscription-cost-column">Тип занятия</td>
+                            <td class="subscription-cost-column">Разовое посещение(руб.)</td>
+                            <td class="subscription-cost-column">8 занятий(руб.)</td>
+                            <td class="subscription-cost-column">Безлимит на месяц(руб.)</td>
+                        </tr>
+                        <tr class="subscription-cost-row">
+                            <td class="subscription-cost-column">Парная йога</td>
+                            <td class="subscription-cost-column">1.000</td>
+                            <td class="subscription-cost-column">6.400</td>
+                            <td class="subscription-cost-column">9.600</td>
+                        </tr>
+                        <tr class="subscription-cost-row">
+                            <td class="subscription-cost-column">Йога</td>
+                            <td class="subscription-cost-column">800</td>
+                            <td class="subscription-cost-column">4.800</td>
+                            <td class="subscription-cost-column">7.200</td>
+                        </tr>
+                        <tr class="subscription-cost-row">
+                            <td class="subscription-cost-column">Пилатес</td>
+                            <td class="subscription-cost-column">700</td>
+                            <td class="subscription-cost-column">4.000</td>
+                            <td class="subscription-cost-column">6.000</td>
+                        </tr>
+                        <tr class="subscription-cost-row">
+                            <td class="subscription-cost-column">Зумба</td>
+                            <td class="subscription-cost-column">600</td>
+                            <td class="subscription-cost-column">3.200</td>
+                            <td class="subscription-cost-column">4.800</td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+     </section>
+     <section class="section-twelfth-page">
+        <div class="container">
+            <div class="header-twelfth-page">
+                <h2>Сделай первый шаг к своей мечте</h2>
+            </div>
+            <div class="information-twelfth-page">
+                <div class="head-header-twelfth-page">
+                    <h3>Заполни заявку сегодня и начни свое фитнес-путешествие</h3>
+                </div>
+                <div class="text-twelfth-page">
+                    <h4>Не жди идеального момента, чтобы начать свой фитнес-путь. Сделай первый шаг сегодня и заполни заявку. Наша команда с радостью ответит на твои вопросы, проведет экскурсию по клубу и поможет тебе начать свое фитнес-путешествие. Вместе мы воплотим твою мечту о фитнесе в реальность.</h4>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="section-thirteenth-page">
+        <a name="record"></a><form action="" method="get" class="form-record">
+            <div class="form-record-training">
+                <div class="form-record-part">
+                    <div class="form-record-label">
+                        <label for="name">Фамилия:</label><br>
+                        <input type="text" name="fname" id="fname" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="name">Имя:</label><br>
+                        <input type="text" name="lname" id="lname" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="name">Отчество:</label><br>
+                        <input type="text" name="vlname" id="vlname" required />
+                    </div>
+                </div>
+                <div class="form-record-part">
+                    <div class="form-record-label form-record-label-birthday">
+                        <label for="">Дата рождения:</label><br>
+                        <input type="date" id="birthday" name="birthday" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="">Номер телефона:</label><br>
+                        <input type="tel" id="tel-number" name="tel-number" inputmode="numeric" pattern="[0-9]+" required />
+                    </div>
+                    <div class="form-record-label">
+                        <label for="">Электронная почта:</label><br>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+                </div>
+        </div>
+            <div class="but-form-record-sub">
+                <input type="button" class="but record-button" onclick="OpenWindow()" value="связаться со мной"/>
+            </div>
+          </form>
+     </section>
+   </main>
+   <footer>
+        <div class="container">
+            <div class="div-footer">
+                <div class="social-icons">
+                    <div class="incon-1">
+                        <img src="img/appstore.svg" alt="appstore-icon" class="icon">
+                    </div>
+                    <div class="incon-2">
+                        <img src="img/instagram.svg" alt="instagram-icon" class="icon">
+                    </div>
+                    <div class="incon-3">
+                        <img src="img/vk.svg" alt="vk-icon" class="icon">
+                    </div>
+                    <div class="incon-4">
+                        <img src="img/google.svg" alt="google-icon" class="icon">
+                    </div>
+                </div>
+                <div class="div-footer-2">
+                    <div class="yandex">
+                        <iframe src="https://yandex.ru/sprav/widget/rating-badge/1061229432?type=rating" width="150" height="50" frameborder="0"></iframe>
+                    </div>
+                    <div class="contacts">
+                        <div class="hot-line">
+                            <div class="footer-hotline-name">
+                                <h5>Горячая линия</h5>
+                            </div>
+                            <div class="footer-hotline-phone">
+                                <h5>+7-(921)-860-33-61</h5>
+                            </div>
+                        </div>
+                        <div class="footer-hotline-address">
+                            <h5>г. Санкт-Петербург, Охотничий пер., 7</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </footer>
+</body>
+</html>
